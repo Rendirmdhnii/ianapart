@@ -15,19 +15,9 @@ export default function PropertyDetail({ apartmentId, onBack, initialRentType = 
     return APARTMENTS.find((apt) => apt.id === Number(apartmentId) || apt.id === apartmentId);
   }, [apartmentId]);
 
-  if (!apartment) {
-    return (
-      <div className="text-center py-12 bg-white">
-        <p className="text-slate-500 font-semibold">Apartemen tidak ditemukan.</p>
-        <button onClick={onBack} className="mt-4 px-6 py-2.5 bg-slate-900 hover:bg-black text-white font-bold rounded-full cursor-pointer">
-          Kembali ke Pencarian
-        </button>
-      </div>
-    );
-  }
-
   // Get active price based on rent type
   const activePrice = useMemo(() => {
+    if (!apartment) return 0;
     switch (rentType.toLowerCase()) {
       case "bulanan":
         return apartment.price.bulanan;
@@ -41,7 +31,7 @@ export default function PropertyDetail({ apartmentId, onBack, initialRentType = 
 
   // Calculate rent duration and total price
   const calculation = useMemo(() => {
-    if (!checkInDate || !checkOutDate) return null;
+    if (!apartment || !checkInDate || !checkOutDate) return null;
 
     const start = new Date(checkInDate);
     const end = new Date(checkOutDate);
@@ -73,7 +63,18 @@ export default function PropertyDetail({ apartmentId, onBack, initialRentType = 
       };
     }
     return null;
-  }, [checkInDate, checkOutDate, rentType, activePrice]);
+  }, [checkInDate, checkOutDate, rentType, activePrice, apartment]);
+
+  if (!apartment) {
+    return (
+      <div className="text-center py-12 bg-white">
+        <p className="text-slate-500 font-semibold">Apartemen tidak ditemukan.</p>
+        <button onClick={onBack} className="mt-4 px-6 py-2.5 bg-slate-900 hover:bg-black text-white font-bold rounded-full cursor-pointer">
+          Kembali ke Pencarian
+        </button>
+      </div>
+    );
+  }
 
   // Helper to format currency
   const formatPrice = (value) => {

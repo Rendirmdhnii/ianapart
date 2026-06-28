@@ -1,6 +1,7 @@
 // Data asli Ian Apartement Sidoarjo (Edisi 5 Unit).
 // Etalase katalog online sewa apartemen Sidoarjo.
 
+// Taruh foto-foto apartemen di dalam folder public/images/ dengan nama file yang sesuai
 export const APARTMENTS = [
   {
     id: 1,
@@ -25,10 +26,10 @@ export const APARTMENTS = [
     },
     facilities: ["WiFi", "AC", "Kolam Renang", "Parkir", "Security 24h"],
     description: "Hunian tipe studio yang nyaman dan modern di Apartemen Prospero. Terletak di kawasan terpadu Kahuripan Nirwana Sidoarjo yang tenang, asri, dan bebas macet. Unit dalam kondisi bersih, full furnished, lengkap dengan perabotan berkualitas. Sangat cocok untuk sewa harian maupun bulanan.",
-    image_url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=500&q=80",
+    image_url: "/images/prospero-1.jpg",
     images: [
-      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80",
-      "https://images.unsplash.com/photo-1502005229762-fc1b2d812ca5?w=800&q=80"
+      "/images/prospero-1.jpg",
+      "/images/prospero-2.jpg"
     ]
   },
   {
@@ -54,10 +55,10 @@ export const APARTMENTS = [
     },
     facilities: ["WiFi", "AC", "Kolam Renang", "Gym", "Parkir", "Dapur", "Security 24h", "Kulkas", "TV"],
     description: "Apartemen mewah 2 Kamar Tidur (2 Bedroom) di Suncity Residence Sidoarjo. Lokasi premium terintegrasi langsung dengan Suncity Mall dan Waterpark Sidoarjo. Unit berdesain modern, luas, bersih, dan dilengkapi dapur fungsional serta ruang tamu mini.",
-    image_url: "https://images.unsplash.com/photo-1502672260266-1c1de24227e5?w=500&q=80",
+    image_url: "/images/suncity-2br-1.jpg",
     images: [
-      "https://images.unsplash.com/photo-1502672260266-1c1de24227e5?w=800&q=80",
-      "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=800&q=80"
+      "/images/suncity-2br-1.jpg",
+      "/images/suncity-2br-2.jpg"
     ]
   },
   {
@@ -83,10 +84,10 @@ export const APARTMENTS = [
     },
     facilities: ["WiFi", "AC", "Kolam Renang", "Gym", "Parkir", "Security 24h", "Kulkas", "Smart TV"],
     description: "Sewa harian/bulanan apartemen tipe studio di Suncity Residence Sidoarjo. Unit no. 1053b ini menawarkan suasana menginap yang nyaman dengan ranjang empuk kualitas hotel, Smart TV, AC dingin, dan kulkas. Memiliki akses lift privat ke Suncity Mall.",
-    image_url: "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=500&q=80",
+    image_url: "/images/suncity-studio-1053b-1.jpg",
     images: [
-      "https://images.unsplash.com/photo-1536376072261-38c75010e6c9?w=800&q=80",
-      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800&q=80"
+      "/images/suncity-studio-1053b-1.jpg",
+      "/images/suncity-studio-1053b-2.jpg"
     ]
   },
   {
@@ -112,10 +113,10 @@ export const APARTMENTS = [
     },
     facilities: ["WiFi", "AC", "Kolam Renang", "Gym", "Parkir", "Security 24h", "TV"],
     description: "Sewa unit tipe Studio di Suncity Residence Sidoarjo. Unit nyaman, bersih, ber-AC dingin, dilengkapi Wi-Fi cepat, TV, serta akses fasilitas olahraga eksklusif.",
-    image_url: "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=500&q=80",
+    image_url: "/images/suncity-studio-1.jpg",
     images: [
-      "https://images.unsplash.com/photo-1554995207-c18c203602cb?w=800&q=80",
-      "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80"
+      "/images/suncity-studio-1.jpg",
+      "/images/suncity-studio-2.jpg"
     ]
   },
   {
@@ -141,10 +142,10 @@ export const APARTMENTS = [
     },
     facilities: ["WiFi", "AC", "Kolam Renang", "Parkir", "Security 24h", "TV"],
     description: "Pilihan sewa tipe Studio di Suncity Residence Sidoarjo. Dilengkapi dengan perabotan standar, kasur nyaman, AC dingin, Wi-Fi gratis, TV layar datar, dan kamar mandi bersih.",
-    image_url: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=500&q=80",
+    image_url: "/images/suncity-studio-type-1.jpg",
     images: [
-      "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=800&q=80",
-      "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?w=800&q=80"
+      "/images/suncity-studio-type-1.jpg",
+      "/images/suncity-studio-type-2.jpg"
     ]
   }
 ];
@@ -156,6 +157,6 @@ export const PROMOS = [
     description: "Sewa unit apartemen Sidoarjo harian dengan kenyamanan dan kualitas hotel bintang 5.",
     code: "PREMIUMDAILY",
     discount: "Hemat",
-    image: "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80"
+    image: "/images/promo-1.jpg"
   }
 ];

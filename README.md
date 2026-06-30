@@ -47,4 +47,4 @@ Ikuti langkah-langkah berikut untuk menjalankan proyek ini di lingkungan pengemb
 Data properti dirender menggunakan format array JSON di dalam kode komponen utama. Untuk memperbarui daftar apartemen, modifikasi data pada array tersebut dengan memastikan struktur properti berikut tetap terjaga: `id`, `nama`, `lokasi`, `harga`, dan jalur absolut direktori lokal pada `image_url`.
 
 ## Pengembang
-Dikembangkan oleh Muhammad Rendy Ramadhani.
+Dikembangkan oleh Rendirmdhnii.
